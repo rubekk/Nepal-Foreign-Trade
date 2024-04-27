@@ -6,6 +6,7 @@
     exportCountriesData,
     customsData,
   } from "$lib/data.js";
+  import { tableSummaryIndex } from "$lib/store.js";
 
   let openDropdown = false;
   let tableType = 0;
@@ -15,7 +16,11 @@
     tableType = e.target.getAttribute("id");
     tableText = e.target.innerText;
     openDropdown = false;
+    
+    tableSummaryIndex.set(parseInt(tableType));
   };
+  
+  tableSummaryIndex.set(parseInt(tableType));
 </script>
 
 <div class="table-container">
@@ -211,6 +216,7 @@
   }
 
   table {
+    margin: 0 .75rem;
     width: 100%;
     background-color: #fff;
     border: 2px solid #797979;

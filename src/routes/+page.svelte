@@ -4,6 +4,7 @@
     import Table from "../components/Table.svelte";
     import WorldMap from "../components/WorldMap.svelte";
     import CustomMap from "../components/CustomMap.svelte";
+    import Summary from "../components/Summary.svelte";
     import Share from "../components/Share.svelte";
 </script>
 
@@ -50,6 +51,10 @@
 
     <div class="table-container">
         <Table />
+    </div>
+
+    <div class="summary-container">
+        <Summary />
     </div>
     
     <div class="worldmap-container">
@@ -125,7 +130,7 @@
     .box-text{
         font-size: .9rem;
     }
-    .share-container, .table-container, .worldmap-container, .custommap-container, .info{
+    .share-container, .summary-container, .table-container, .worldmap-container, .custommap-container, .info{
         width: 100%;
         margin-top: 2rem;
     }
