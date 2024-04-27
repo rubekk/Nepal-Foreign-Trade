@@ -176,7 +176,7 @@
     flex-direction: column;
   }
   .drop-down {
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
     width: 350px;
   }
   .selected {

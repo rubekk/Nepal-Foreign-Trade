@@ -62,14 +62,15 @@ li{
         flex-direction: column;
         gap: 1.5rem;
     }
+    .table-container{
+        width: 550px;
+        display: block;
+        overflow-x: scroll;
+    }
 }
 @media (max-width: 510px){
     :root{
         --width: 450px;
-    }
-    table{
-        width: 550px !important;
-        overflow-x: scroll !important;
     }
 }
 @media (max-width: 460px){
