@@ -1,0 +1,84 @@
+:root{
+    --blue: rgb(1, 113, 182);
+    --green:rgb(92, 208, 15);
+    --red:#f34867;
+    --width: 700px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background: url($lib/imgs/graph.svg);
+}
+li{
+    list-style: none;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* elems with flex */
+.container, .total-container, .box, .share-container, .world-map-container, .table-container, .share-container, .custom-map-container, .chart-container, .chart-legend li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  media queries */
+@media (max-width: 725px){
+    :root{
+        --width: 650px;
+    }
+}
+@media (max-width: 675px){
+    :root{
+        --width: 600px;
+    }
+}
+@media (max-width: 625px){
+    :root{
+        --width: 550px;
+    }
+}
+@media (max-width: 560px){
+    :root{
+        --width: 500px;
+    }
+    .total-container{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+@media (max-width: 510px){
+    :root{
+        --width: 450px;
+    }
+    table{
+        width: 500px !important;
+        overflow-x: scroll !important;
+    }
+}
+@media (max-width: 460px){
+    :root{
+        --width: 400px;
+    }
+}
+@media (max-width: 400px){
+    :root{
+        --width: 375px;
+    }
+}
