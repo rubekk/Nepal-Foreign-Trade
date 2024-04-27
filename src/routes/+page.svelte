@@ -6,10 +6,6 @@
     import CustomMap from "../components/CustomMap.svelte";
     import Summary from "../components/Summary.svelte";
     import Share from "../components/Share.svelte";
-
-    setTimeout(()=>{
-        alert("All import and export values are in 1000 (thousands)")
-    }, 5000)
 </script>
 
 <div class="container">
