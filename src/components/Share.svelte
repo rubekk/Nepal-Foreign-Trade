@@ -1,5 +1,5 @@
 <script>
-    const webUrl= "https://ktmguessr.netlify.app/";
+    const webUrl= "https://nepalforeigntrade.netlify.app/";
     const link= {
         fbLink: `https://facebook.com/share.php?u=${webUrl}`,
         twitterLink: `https://twitter.com/share?url=${webUrl}`,
